@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BakeMate - Font Awesome 5</title>
+
+    <!-- Tích hợp thư viện Font Awesome 5 Free -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fffaf5;
+            color: #49372d;
+        }
+
+        /* HEADER */
+        header {
+            background: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px #00000010;
+        }
+
+        .logo {
+            font-size: 27px;
+            font-weight: bold;
+            color: #bd7954;
+        }
+
+        .logo i {
+            margin-right: 8px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #49372d;
+            margin: 0 12px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #d68b61;
+        }
+
+        nav i {
+            margin-right: 5px;
+        }
+
+        /* BANNER */
+        .banner {
+            text-align: center;
+            padding: 65px 20px;
+            background: #f5e4d7;
+        }
+
+        .banner h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .banner p {
+            font-size: 16px;
+            color: #755c4c;
+        }
+
+        /* SEARCH */
+        .search-box {
+            margin: 25px auto;
+            width: 80%;
+            max-width: 500px;
+            display: flex;
+            background: white;
+            border-radius: 30px;
+            overflow: hidden;
+            border: 1px solid #e5c6b3;
+        }
+
+        .search-box input {
+            flex: 1;
+            border: none;
+            outline: none;
+            padding: 14px 20px;
+        }
+
+        .search-box button {
+            background: #bd7954;
+            color: white;
+            border: none;
+            padding: 0 22px;
+            cursor: pointer;
+        }
+
+        /* RECIPE */
+        .recipes {
+            padding: 45px 8%;
+        }
+
+        .recipes h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 27px;
+        }
+
+        .recipe-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .recipe-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 3px 12px #00000010;
+            transition: 0.3s;
+        }
+
+        .recipe-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .recipe-icon {
+            font-size: 35px;
+            color: #bd7954;
+            margin-bottom: 15px;
+        }
+
+        .recipe-card h3 {
+            margin-bottom: 12px;
+        }
+
+        .recipe-info {
+            margin-top: 15px;
+            color: #8a7668;
+            font-size: 14px;
+        }
+
+        .recipe-info i {
+            color: #d68b61;
+            margin-right: 5px;
+        }
+
+        .favorite {
+            float: right;
+            color: #e77c7c;
+            cursor: pointer;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #49372d;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        footer i {
+            margin: 0 8px;
+            color: #f1c4a5;
+            font-size: 20px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .recipe-list {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <i class="fas fa-birthday-cake"></i> BakeMate
+        </div>
+
+        <nav>
+            <a href="#"><i class="fas fa-home"></i> Trang chủ</a>
+            <a href="#"><i class="fas fa-book-open"></i> Công thức</a>
+            <a href="#"><i class="fas fa-heart"></i> Yêu thích</a>
+            <a href="#"><i class="fas fa-user"></i> Tài khoản</a>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <h1><i class="fas fa-cookie-bite"></i> Khám phá thế giới làm bánh</h1>
+        <p>Tìm kiếm công thức và sáng tạo những chiếc bánh thơm ngon cùng BakeMate.</p>
+
+        <!-- SEARCH -->
+        <div class="search-box">
+            <input type="text" placeholder="Bạn muốn làm món bánh gì?">
+            <button type="button">
+                <i class="fas fa-search"></i> Tìm kiếm
+            </button>
+        </div>
+    </section>
+
+    <!-- RECIPE LIST -->
+    <section class="recipes">
+        <h2><i class="fas fa-star"></i> Công thức nổi bật</h2>
+
+        <div class="recipe-list">
+
+            <div class="recipe-card">
+                <span class="favorite">
+                    <i class="fas fa-heart"></i>
+                </span>
+                <div class="recipe-icon">
+                    <i class="fas fa-birthday-cake"></i>
+                </div>
+                <h3>Bánh kem dâu tây</h3>
+                <p>Công thức bánh kem mềm mịn kết hợp với vị dâu tây tươi ngọt dịu.</p>
+                <div class="recipe-info">
+                    <p><i class="fas fa-clock"></i> 60 phút</p>
+                    <p><i class="fas fa-users"></i> 4 khẩu phần</p>
+                    <p><i class="fas fa-signal"></i> Trung bình</p>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <span class="favorite">
+                    <i class="far fa-heart"></i>
+                </span>
+                <div class="recipe-icon">
+                    <i class="fas fa-cookie"></i>
+                </div>
+                <h3>Bánh quy bơ</h3>
+                <p>Bánh quy giòn thơm mùi bơ, thích hợp cho những buổi trà chiều.</p>
+                <div class="recipe-info">
+                    <p><i class="fas fa-clock"></i> 35 phút</p>
+                    <p><i class="fas fa-users"></i> 3 khẩu phần</p>
+                    <p><i class="fas fa-signal"></i> Dễ</p>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <span class="favorite">
+                    <i class="far fa-heart"></i>
+                </span>
+                <div class="recipe-icon">
+                    <i class="fas fa-bread-slice"></i>
+                </div>
+                <h3>Bánh mì sữa</h3>
+                <p>Bánh mì mềm xốp, thơm mùi sữa với cách làm đơn giản tại nhà.</p>
+                <div class="recipe-info">
+                    <p><i class="fas fa-clock"></i> 90 phút</p>
+                    <p><i class="fas fa-users"></i> 5 khẩu phần</p>
+                    <p><i class="fas fa-signal"></i> Khó</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h3><i class="fas fa-birthday-cake"></i> BakeMate</h3>
+        <p>Đồng hành cùng bạn trên hành trình làm bánh.</p>
+        <br>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fas fa-envelope"></i>
+        <p>© 2026 BakeMate. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
