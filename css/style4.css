@@ -1,0 +1,29 @@
+/*Bài tập 4*/
+.menu {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    background-color: turquoise;
+    width: 100px;
+}
+
+.menu li a {
+    display: block;
+    color: blue;
+    text-decoration: underline;
+    padding: 5px;
+}
+
+.best-shared {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+.logo img {
+    width: 200px;
+}

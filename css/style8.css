@@ -1,0 +1,105 @@
+/*Bài tập 8*/
+
+/* i. Khung chứa lớn */
+#root {
+    width: 1024px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* ii. Tiêu đề The Bat family */
+#site-header {
+    text-align: center;
+    margin: 0 0 30px;
+    padding: 10px;
+    background-color: #ccc;
+    color: #fff;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    text-shadow: 2px 2px 3px #333;
+}
+
+/* Tạo biểu tượng con dơi trước tiêu đề */
+#site-header span::before {
+    content: "🦇";
+    margin-right: 10px;
+    color: #000;
+    text-shadow: none;
+}
+
+/* iii. Danh sách superheroes */
+.superheroes {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Các nhân vật */
+.superheroes li {
+    width: 20%;
+    display: inline-block;
+    position: relative;
+    transition: width 0.3s ease;
+}
+
+/* iv. Hình ảnh nhân vật */
+.superheroes img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+}
+
+/* Tên nhân vật */
+.hero-header {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 13px;
+    text-shadow: 1px 1px 3px black;
+    z-index: 1;
+}
+
+/* v. Thẻ a trong superheroes */
+.superheroes a {
+    display: none;
+    width: 100%;
+    padding: 7px;
+    margin-top: 3px;
+    background-color: #666;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: Georgia, serif;
+    font-size: 12px;
+}
+
+/* vi. Hiệu ứng hover */
+
+/* 1. Khi rê chuột vào nhân vật, hiện Read more */
+.superheroes li:hover a {
+    display: block;
+    text-decoration: underline;
+}
+
+/* 2. Khi rê chuột, tăng chiều rộng nhân vật */
+.superheroes li:hover {
+    width: 24%;
+}
+
+/* Làm nổi bật nhân vật đang được chọn */
+.superheroes li:hover img {
+    border-color: #999;
+}

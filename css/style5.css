@@ -1,0 +1,39 @@
+/* Bài tập 5 */
+.best-shared {
+    text-align: center;
+}
+
+.best-shared h2 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #444;
+}
+
+.best-shared h2 strong {
+    color: deepskyblue;
+}
+
+.lead-text {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.btn-list {
+    list-style: none;
+    padding: 0;
+}
+
+.btn-list li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.btn-list a {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 12px;
+}
