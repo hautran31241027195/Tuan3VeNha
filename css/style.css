@@ -45,14 +45,6 @@ header p {
     box-shadow: 0 3px 12px rgba(0,0,0,0.08);
 }
 
-.avatar img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #e2eeee;
-}
-
 .profile-info {
     flex: 1;
 }
