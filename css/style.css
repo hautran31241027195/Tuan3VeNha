@@ -1,0 +1,183 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #315c81, #65a6a6);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+/* PROFILE */
+.profile {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.avatar img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #e2eeee;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h2 {
+    color: #315c81;
+    margin-bottom: 12px;
+}
+
+.profile-info h3 {
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    margin: 7px 0;
+}
+
+.profile-info i {
+    color: #438f91;
+    width: 22px;
+}
+
+.introduction {
+    margin-top: 15px;
+}
+
+/* SOCIAL LINKS */
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.social-links a {
+    text-decoration: none;
+    background-color: #315c81;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.social-links a:hover {
+    background-color: #438f91;
+}
+
+/* ASSIGNMENTS */
+.assignments {
+    max-width: 1000px;
+    margin: 35px auto;
+}
+
+.assignments h2 {
+    text-align: center;
+    color: #315c81;
+    margin-bottom: 25px;
+}
+
+.assignment-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.assignment-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #438f91;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.assignment-card h3 {
+    color: #315c81;
+    margin-bottom: 8px;
+}
+
+.assignment-card p {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.assignment-card a {
+    display: inline-block;
+    margin-right: 8px;
+    margin-top: 5px;
+    text-decoration: none;
+    color: #438f91;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.assignment-card a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    background-color: #315c81;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 13px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 650px) {
+    .profile {
+        flex-direction: column;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .assignment-list {
+        grid-template-columns: 1fr;
+        margin: 0 20px;
+    }
+
+    .assignments h2 {
+        font-size: 20px;
+    }
+}
